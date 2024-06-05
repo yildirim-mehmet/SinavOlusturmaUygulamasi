@@ -1,0 +1,51 @@
+--Ders Tablosu:
+
+CREATE TABLE Ders (
+    DersID INT PRIMARY KEY,
+    DersAdi NVARCHAR(100) NOT NULL
+);
+--Konu Tablosu:
+
+
+CREATE TABLE Konu (
+    KonuID INT PRIMARY KEY,
+    KonuAdi NVARCHAR(100) NOT NULL,
+    DersID INT NOT NULL,
+    FOREIGN KEY (DersID) REFERENCES Ders(DersID)
+);
+--Soru Tablosu:
+
+CREATE TABLE Soru (
+    SoruID INT PRIMARY KEY,
+    SoruMetni NVARCHAR(MAX) NOT NULL,
+    KonuID INT NOT NULL,
+    ZorlukSeviyesi INT NOT NULL,
+    FOREIGN KEY (KonuID) REFERENCES Konu(KonuID)
+);
+--Sik Tablosu:
+
+CREATE TABLE Sik (
+    SikID INT PRIMARY KEY,
+    SikMetni NVARCHAR(MAX) NOT NULL,
+    DogruMu BIT NOT NULL,
+    SoruID INT NOT NULL,
+    FOREIGN KEY (SoruID) REFERENCES Soru(SoruID)
+);
+
+--user Tablosu:
+
+CREATE TABLE [dbo].[Kullanici](
+	[KullaniciID] [int] IDENTITY(1,1) NOT NULL,
+	[KullaniciAdi] [nvarchar](50) NOT NULL,
+	[Sifre] [nvarchar](50) NOT NULL,
+);
+--Sinav Tablosu :
+
+CREATE TABLE [dbo].[Sinav](
+	[SinavID] [int] IDENTITY(1,1) NOT NULL,
+	[DersID] [int] NOT NULL,
+	[SinavAdi] [nvarchar](100) NOT NULL,
+	[OlusturulmaTarihi] [datetime] NOT NULL,
+);
+
+

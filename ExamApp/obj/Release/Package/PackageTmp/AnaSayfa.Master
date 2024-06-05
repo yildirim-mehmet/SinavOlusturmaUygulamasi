@@ -1,0 +1,31 @@
+﻿<%--<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AnaSayfa.master.cs" Inherits="ExamApp.AnaSayfa" %>--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AnaSayfa.master.cs" Inherits="ExamApp.AnaSayfa" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Sınav Hazırlama Uygulaması</title>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div>
+        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/AnaSayfa.aspx" Text="Ana Sayfa"/>
+                <asp:MenuItem NavigateUrl="~/KullaniciYonetimi.aspx" Text="Kullanıcı Yönetimi"/>
+                <asp:MenuItem NavigateUrl="~/SınavYonetimi.aspx" Text="Sınav Yönetimi"/>
+                <asp:MenuItem NavigateUrl="~/DersYonetimi.aspx" Text="Ders Yönetimi"/>
+                <asp:MenuItem NavigateUrl="~/KonuYonetimi.aspx" Text="Konu Yönetimi"/>
+                <asp:MenuItem NavigateUrl="~/SoruEkleme.aspx" Text="Soru Ekleme"/>
+                <asp:MenuItem NavigateUrl="~/Raporlama.aspx" Text="Raporlama"/>
+                <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Çıkış"/>
+            </Items>
+        </asp:Menu>
+    </div>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </form>
+</body>
+</html>
+
+
+
