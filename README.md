@@ -15,6 +15,7 @@ Uygulama Asp.net WebForm WebApplication .net4,5 frame work ü üzerinde yapıld�
 Örnek olarak Master page kullarak aşağıdaki sayfanın kodları eklendi;
 
 Master Page (AnaSayfa.master): Tüm sayfalarda ortak menü ve üst bilgileri barındıran ana sayfa şablonu.
+
 Giriş Sayfası (Login.aspx): Kullanıcıların sisteme giriş yapabileceği sayfa.
 Ana Sayfa (AnaSayfa.aspx): Sisteme giriş yapan kullanıcının ana sayfası.
 Kullanıcı Yönetimi (KullanıcıYonetimi.aspx): Yeni kullanıcı ekleme ve silme işlemlerinin yapılabileceği sayfa.
