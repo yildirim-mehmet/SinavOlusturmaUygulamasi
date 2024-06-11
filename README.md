@@ -1,8 +1,6 @@
 # SinavOlusturmaUygulamasi
  KTUN Proje Ödevi SinavOlusturmaUygulamasi
  
-
-
 1	♦	Login olan kullanıcıların eklendiği silindiği,
 2	♦	Sınav Derslerinin eklendiği silindiği,
 3	♦	Ders Konularının eklendiği silindiği,
