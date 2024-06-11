@@ -1,5 +1,6 @@
 # SinavOlusturmaUygulamasi
  KTUN Proje Ödevi SinavOlusturmaUygulamasi
+ 
 
 
 1	♦	Login olan kullanıcıların eklendiği silindiği,
@@ -12,9 +13,13 @@
 8	♦	hazırlanan sınava göre A ve B grubu için cevap anahtarları oluşturan Sistem...
 9	♦	Sistemin veri tabanı MSSQL  (kullanıcı, ders, konu, sınav ve şıkların sql create scirptleri)
 10	♦	Uygulama Asp.net WebForm WebApplication .net4,5 frame work ü üzerinde yapıldı.
+
 11	♦	
+
 12	♦	Örnek olarak Master page kullarak aşağıdaki sayfanın kodları eklendi;
+
 13	♦	
+
 14	♦	Master Page (AnaSayfa.master): Tüm sayfalarda ortak menü ve üst bilgileri barındıran ana sayfa şablonu.
 15	♦	Giriş Sayfası (Login.aspx): Kullanıcıların sisteme giriş yapabileceği sayfa.
 16	♦	Ana Sayfa (AnaSayfa.aspx): Sisteme giriş yapan kullanıcının ana sayfası.
